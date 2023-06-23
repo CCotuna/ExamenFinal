@@ -9,22 +9,23 @@ public class Simulare {
 		
 		Fabrica fabrica = new Fabrica();
 
-        Angajat angajat = new Angajat("Popescu", "Ion"," angajat ", 5, 10);
+        Angajat angajat = new Angajat("Balla", "Janos"," angajat ", 5, 10);
  
-        Muncitor muncitor = new Muncitor("Ionescu", "Maria"," muncitor ", 3, 20);
+        Muncitor muncitor = new Muncitor("Cotuna", "Calin"," muncitor ", 3, 20);
  
-        Manager manager = new Manager("Popa", "Alex"," manager ", 7, 20);
+        Manager manager = new Manager("Ion", "Alex"," manager ", 8, 20);
        
-        Client client1 = new Client("Smith");
+        Client client1 = new Client("George");
         
         System.out.println(angajat.afisareSalariu());
         System.out.println(angajat);
         System.out.println(muncitor.afisareSalariu());
         System.out.println(muncitor);
-        muncitor.adaugaResponsabilitate("Tunde iarba");
+        
+        muncitor.adaugaResponsabilitate("Intretine spatiul");
         muncitor.afisareResponsabilitati();
+        
         manager.adauga(muncitor);
-        System.out.println();
         manager.afiseazaSubordonati();
         System.out.println(manager);
         

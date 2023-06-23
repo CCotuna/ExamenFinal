@@ -2,13 +2,9 @@ package Fabrica;
 
 import java.util.ArrayList;
 
-import Documente.Act;
-import Documente.FluturasSalar;
-import Documente.Oferta;
-import Exceptii.AngajatConcediat;
-import Persoane.Angajat;
-import Persoane.Client;
-import Persoane.Personal;
+import Documente.*;
+import Exceptii.*;
+import Persoane.*;
 
 public class Fabrica {
 	
